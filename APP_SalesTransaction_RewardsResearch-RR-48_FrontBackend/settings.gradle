@@ -1,0 +1,4 @@
+include 'RewardsResearch:RewardsResearch'
+include 'RewardsResearch:RewardsResearchEAR'
+
+rootProject.name = 'APP_SalesTransaction_RewardsResearch'

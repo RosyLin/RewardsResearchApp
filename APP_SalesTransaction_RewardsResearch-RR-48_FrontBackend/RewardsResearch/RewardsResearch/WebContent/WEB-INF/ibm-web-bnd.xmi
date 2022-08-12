@@ -1,0 +1,12 @@
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+
+<resRefBindings xmi:id="ResourceRefBinding_Gold_EnterpriseServices" jndiName="jdbc/RewardsResearchEnterpriseServices_SQL">
+  <bindingResourceRef href="WEB-INF/web.xml#Gold_EnterpriseServices"/>
+</resRefBindings>
+
+<resRefBindings xmi:id="ResourceRefBinding_rewards_research_payments" jndiName="jdbc/rewards_research_payments">
+  <bindingResourceRef href="WEB-INF/web.xml#rewards_research_payments"/>
+</resRefBindings>
+
+</webappbnd:WebAppBinding>

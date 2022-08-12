@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+       
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                sh 'sudo chmod -Rf 2775 /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}'
+                sh './gradlew build -Dlabel=${GIT_BRANCH}.${BUILD_NUMBER}'
+                echo 'Build finish ok'
+            }
+        }
+        stage('Staging') {
+            steps {
+                sh 'mkdir -p /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}/${GIT_BRANCH}.${BUILD_NUMBER}/RewardsResearchEAR'
+                
+                sh 'cp -r RewardsResearch/RewardsResearchEAR/build/libs/* \
+                            /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}/${GIT_BRANCH}.${BUILD_NUMBER}/RewardsResearchEAR'
+                            
+                sh 'mkdir -p /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}/${GIT_BRANCH}.${BUILD_NUMBER}/RewardsResearchEARProperties'
+                
+                sh 'cp -r RewardsResearch/RewardsResearchEARProperties/* \
+                            /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}/${GIT_BRANCH}.${BUILD_NUMBER}/RewardsResearchEARProperties'
+                            
+                sh 'chmod -Rf 2775 /scmshared/CE/buildsvr/staging/SalesTransaction/${GIT_BRANCH}'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploys performed manually in Urban Code... Would be nice to integrate that with Jenkins!'
+            }
+        }
+    }
+    post {
+    
+    success {
+         emailext (
+          to: 'ConfigurationEngineers@llbean.com',
+          subject: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+          body: """SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':
+            Check console output at ${env.BUILD_URL}consoleFull """,
+          recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider'], 
+          [$class: 'CulpritsRecipientProvider']]
+        )
+    }
+
+    failure {
+       emailext (
+          to: 'ConfigurationEngineers@llbean.com',
+          subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+          body: """FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':
+            Check console output at ${env.BUILD_URL}consoleFull """,
+          recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider'], 
+          [$class: 'CulpritsRecipientProvider']]
+        )
+    }
+  }
+}

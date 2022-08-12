@@ -1,0 +1,34 @@
+plugins {
+   id "com.orctom.was" version "1.1.3.2"
+}
+apply plugin: 'ear'
+apply plugin: 'maven-publish'
+
+apply from: 'http://ce-prod-vm01:8081/repository/apply-from/com/llbean/gradle/applyFrom/earbase/1.0.4/earbase-1.0.4.gradle'
+apply from: 'http://ce-prod-vm01:8081/repository/apply-from/com/llbean/gradle/applyFrom/base/1.0.4/base-1.0.4.gradle'
+
+sourceCompatibility = 1.8
+version = '1.0.0-SNAPSHOT'
+
+dependencies {
+    deploy project(path: ':RewardsResearch:RewardsResearch', configuration: 'archives')
+
+	earlib project(path: ':RewardsResearch:RewardsResearch', configuration: 'compile')
+}
+
+/**
+ * This ia a local intendent task that needs to be use when the server is up and running, it will
+ * help to automatically deploy the EAR to the was local instance.
+ * More configurations and details here:
+ * https://github.com/orctom/was-gradle-plugin
+ */
+was {
+   wasHome = "C:/llbtools/WAS8_5_Profiles/rlinWAS" // update with your profile name
+   applicationName = 'RewardsResearchEAR'
+   host = 'localhost'
+   server = 'server1'
+   virtualHost = 'default_host'
+   verbose = true
+   restartAfterDeploy = false
+   packageFile = ear.archivePath
+}

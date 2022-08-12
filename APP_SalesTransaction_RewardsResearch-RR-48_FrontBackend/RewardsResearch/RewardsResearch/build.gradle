@@ -1,0 +1,20 @@
+apply plugin: 'war'
+apply plugin: 'maven-publish'
+
+apply from: 'http://ce-prod-vm01:8081/repository/apply-from/com/llbean/gradle/applyFrom/base/1.0.4/base-1.0.4.gradle'
+
+sourceSets {
+    main.java.srcDirs = ['src']
+}
+
+dependencies {
+    providedCompile 'org.apache:log4j:1.2.17'
+    providedCompile 'com.google:gson:2.2.4'
+    providedCompile 'com.llbean.CMN_Core_llbcommoncore:llbcommoncore:1.2.1'
+    compile 'com.google:gson:2.2.4'
+}
+
+war {
+    webAppDirName = 'WebContent'
+    archiveName = 'RewardsResearch.war'
+}

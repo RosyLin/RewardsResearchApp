@@ -1,0 +1,700 @@
+{
+"properties":
+[
+    {
+        "id": "010012445350",
+        "transaction": {
+            "transactionType": "Direct",
+            "transactionId": "010012445350"
+        },
+        "externalSalesTransId": null,
+        "externalOrderSequenceNbr": null,
+        "date": "2022-04-14T12:44:22.673",
+        "transactionBeginTs": "",
+        "transactionEndTs": "",
+        "source": "PHONE",
+        "purchaseSource": "PHONE",
+        "isCustPrevIdSuccessful": true,
+        "userId": "36761",
+        "sourceCode": "2000000",
+        "alphaCode": "ZZ",
+        "purchaseStatus": "PROCESSING",
+        "type": "REGULAR",
+        "status": "PROCESSING",
+        "total": "139.00",
+        "buyer": {
+            "buyerEmailAddress": "AABBOTT@LLBEAN.COM",
+            "customerId": "00666079972",
+            "customerGenderId": "U",
+            "customerTelephoneNumber": [
+                {
+                    "telephoneTypeInd": "PHN",
+                    "telephoneNumber": "0000001",
+                    "areaCode": "207",
+                    "telephoneExtension": "",
+                    "telephoneUsageInd": "D",
+                    "internationalCountryCode": "1"
+                }
+            ],
+            "customerAddress": {
+                "addressId": "96648119828",
+                "addressLine1Text": "1722 JACOBS DR",
+                "addressLine2Text": "",
+                "addressLine3Text": "",
+                "cityName": "GALLATIN",
+                "postalCode": "370667461",
+                "countryDesc": "UNITED STATES",
+                "countryId": "USA",
+                "countryAddressFormat": "D1",
+                "jurisdictionCode": "TN",
+                "secondaryAddressInd": "",
+                "secondaryAddressLineText": "",
+                "customerAddressMailFlag": "true",
+                "mailingLabel": [
+                    {
+                        "Line": "1722 JACOBS DR"
+                    },
+                    {
+                        "Line": "GALLATIN TN 370667461"
+                    },
+                    {
+                        "Line": "UNITED STATES"
+                    }
+                ],
+                "addressSequenceNumber": "1"
+            },
+            "customerName": {
+                "businessName": "",
+                "surName": "FALCK",
+                "firstGivenName": "ELIZABETH",
+                "postSurName": "",
+                "secondGivenName": "",
+                "honorific": "",
+                "suffixName": "",
+                "titleDesc": ""
+            }
+        },
+        "recipients": [
+            {
+                "customerId": "00666079972",
+                "customerGenderId": "U",
+                "isBuyer": "true",
+                "packageLabelName": "",
+                "suppressPI": "false",
+                "carrierId": "00010",
+                "carrierServiceId": "00001",
+                "overrideExpediteChargeAmount": "0",
+                "waiveBaseShipping": "false",
+                "waiveExpediteShipping": "false",
+                "waiveShippingReasonCode": "SCOA3",
+                "waiveShippingReasonText": "",
+                "waiveShippingSequenceNbr": "0",
+                "waiveShippingReasonTyp": "",
+                "recipientSequenceNbr": "0",
+                "customerName": {
+                    "businessName": "",
+                    "surName": "FALCK",
+                    "firstGivenName": "ELIZABETH",
+                    "postSurName": "",
+                    "secondGivenName": "",
+                    "honorific": "",
+                    "suffixName": "",
+                    "titleDesc": ""
+                },
+                "customerAddress": {
+                    "addressId": "96648119828",
+                    "addressLine1Text": "1722 JACOBS DR",
+                    "addressLine2Text": "",
+                    "addressLine3Text": "",
+                    "cityName": "GALLATIN",
+                    "postalCode": "370667461",
+                    "countryDesc": "UNITED STATES",
+                    "countryId": "USA",
+                    "countryAddressFormat": "D1",
+                    "jurisdictionCode": "TN",
+                    "secondaryAddressInd": "",
+                    "secondaryAddressLineText": "",
+                    "customerAddressMailFlag": "true",
+                    "effectiveDate": "2018-03-29",
+                    "mailingLabel": [
+                        {
+                            "Line": "1722 JACOBS DR"
+                        },
+                        {
+                            "Line": "GALLATIN TN 370667461"
+                        },
+                        {
+                            "Line": "UNITED STATES"
+                        }
+                    ],
+                    "addressSequenceNumber": "1"
+                },
+                "customerTelephoneNumber": [
+                    {
+                        "telephoneTypeInd": "PHN",
+                        "telephoneNumber": "0000001",
+                        "areaCode": "207",
+                        "telephoneExtension": "",
+                        "telephoneUsageInd": "S",
+                        "internationalCountryCode": "1"
+                    }
+                ],
+                "customerMessageList": [],
+                "shippingComments": "",
+                "financials": {
+                    "currentServiceAmountTotal": "0",
+                    "currentDiscountAmountTotal": "0",
+                    "futureServiceAmountTotal": "0",
+                    "futureDiscountAmountTotal": "0",
+                    "serviceAmountTotal": "0",
+                    "merchandiseTotal": "139.00",
+                    "currentMerchandiseTotal": "139.00",
+                    "futureMerchandiseTotal": "0",
+                    "currentAdditionalShippingChargeAmount": "0",
+                    "futureAdditionalShippingChargeAmount": "0",
+                    "currentTaxTotal": "0",
+                    "futureTaxTotal": "0",
+                    "totalTaxAmount": "0",
+                    "currentDutiesTotal": "0",
+                    "currentBaseShippingChargeAmount": "0",
+                    "currentExpediteShippingChargeAmount": "0",
+                    "promoShippingSavingsAmount": "0",
+                    "promoMerchandiseSavingsAmount": "0",
+                    "rewardsAppliedTotalAmount": "139.00",
+                    "rewardsRefundTotalAmount": "0",
+                    "rewardsCancelTotalAmount": "0",
+                    "currentRewardsTotalAmount": "139.00",
+                    "futureRewardsTotalAmount": "0",
+                    "recipientQuantityTotal": "1",
+                    "recipientLineItemCount": "1"
+                }
+            }
+        ],
+        "items": [
+            {
+                "customerId": "00666079972",
+                "recipientSequenceNbr": "0",
+                "id": "212880",
+                "sku": "0XB0604070",
+                "prodId": "0XB0604070",
+                "merchandisingDescriptorId": "1914",
+                "sizeCode": "152",
+                "returnedQuantity": "0",
+                "shipDeliveryInd": "",
+                "reEntryFlag": "false",
+                "promoApplied": "false",
+                "quotedMaxDeliveryDate": "2022-04-21",
+                "discounts": [
+                    {
+                        "discountSequenceNbr": "1",
+                        "discountGroup": "15",
+                        "discountAmount": "139.00",
+                        "promoOfferId": "0",
+                        "promoGiftCard": ""
+                    }
+                ],
+                "initialSequenceNbr": "1",
+                "reviews": {},
+                "published": 0,
+                "alphaCode": "ZZ",
+                "desc": "8\" Bean Boot Ws",
+                "discountCategoryInd": "A",
+                "quantity": "1",
+                "returnable": "false",
+                "returnableQuantity": "1",
+                "dutyTaxAmount": "0",
+                "image": "https://ecdisq.llbean.net/is/image/wim/212880_1914_42",
+                "lineItemStatusInd": "AVAIL",
+                "lineItemStatus": "IN PROGRESS",
+                "lineItemSequenceNbr": "1",
+                "lineItemMessage": [],
+                "type": "setLineItemType",
+                "components": [],
+                "initialLineItemSequenceNbr": "1",
+                "services": [],
+                "attributes": [
+                    {
+                        "id": "1914",
+                        "name": "Color/Style",
+                        "value": "Tan/Brown",
+                        "desc": "Tan/Brown"
+                    },
+                    {
+                        "id": "152",
+                        "name": "Size",
+                        "value": "7 M(B)",
+                        "desc": "7 M(B)"
+                    }
+                ],
+                "prices": {
+                    "price": "139.00",
+                    "fullprice": "139.00",
+                    "saleprice": "139.00",
+                    "discountamount": "0.00",
+                    "additionalShippingChargeAmount": "0",
+                    "priceValid": "true",
+                    "groupFullPrice": "0",
+                    "groupFullQuantity": "0",
+                    "rewardsAmount": "139.00",
+                    "rewardsCancelAmount": "0",
+                    "pricePaid": "0"
+                },
+                "name": "Women's 8\"Bean Boot, 7 M(B), Tan/Brown",
+                "dutyTaxes": [],
+                "profitCenterId": "0000001100",
+                "packagesTracking": []
+            }
+        ],
+        "services": [],
+        "payments": {
+            "methods": [
+                {
+                    "paymentAuthHistoryList": [],
+                    "activityInd": "A",
+                    "amount": "0.00",
+                    "paymentMethod": "NONE",
+                    "paymentMethodCategory": "CASH",
+                    "type": "",
+                    "paymentNumber": "1",
+                    "paymentMethodVehicle": "NONE",
+                    "paymentMethodDescription": "NO MONEY",
+                    "paymentMethodId": "00006",
+                    "paymentDeviceId": null,
+                    "lastPaymentHistoryResponseSequenceNbr": "0",
+                    "maskedPaymentDeviceId": null
+                }
+            ],
+            "activity": []
+        },
+        "promoCodes": [],
+        "promoGiftCards": [],
+        "promoGlobalOffers": [],
+        "promoOverrideOffers": [],
+        "package": [],
+        "financials": {
+            "currentMerchandiseTotal": "139.00",
+            "futureMerchandiseTotal": "0",
+            "currentTaxTotal": "0",
+            "futureTaxTotal": "0",
+            "currentDutiesTotal": "0",
+            "currentBaseShippingChargeAmount": "0",
+            "futureBaseShippingChargeAmount": "0",
+            "currentShippingExpediteChargeAmount": "0",
+            "currentAdditionalShippingChargeAmount": "0",
+            "futureAdditionalShippingChargeAmount": "0",
+            "returnPostageRefundAmount": "0",
+            "refundBaseShippingChargeAmount": "0",
+            "refundExpediteShippingChargeAmount": "0",
+            "dutyTaxRefundAmount": "0",
+            "returnTotalAmount": "0",
+            "returnLabelAmount": "0",
+            "returnDiscountAmount": "0",
+            "cashRefundTotalAmount": "0",
+            "giftCardRefundTotalAmount": "0",
+            "totalDiscountAmount": "0",
+            "totalToDateAmount": "139.00",
+            "promoShippingSavingsAmount": "0",
+            "promoMerchandiseSavingsAmount": "0",
+            "currentServiceTotal": "0",
+            "futureServiceTotal": "0",
+            "futureExternalPaymentsTotalAmount": "0",
+            "futureCreditCardPaymentsTotalAmount": "0",
+            "billPaymentsTotalAmount": "0",
+            "bwrPaymentsTotalAmount": "0",
+            "cashPaymentsTotalAmount": "0",
+            "checkPaymentsTotalAmount": "0",
+            "moneyOrderPaymentsTotalAmount": "0",
+            "noChargePaymentsTotalAmount": "0",
+            "noMoneyPaymentsTotalAmount": "0",
+            "paidPaymentsTotalAmount": "0",
+            "couponPaymentsTotalAmount": "0",
+            "giftCertificatePaymentsTotalAmount": "0",
+            "giftCardPaymentsTotalAmount": "0",
+            "checkRefundTotalAmount": "0",
+            "underpaymentAmount": "0",
+            "couponRefundTotalAmount": "0",
+            "creditCardRefundTotalAmount": "0",
+            "externalPaymentRefundTotalAmount": "0",
+            "currentCreditCardPaymentsTotalAmount": "0",
+            "currentDebitCardPaymentsTotalAmount": "0",
+            "currentExternalPaymentsTotalAmount": "0",
+            "rewardsAppliedTotalAmount": "139.00",
+            "rewardsRefundTotalAmount": "0",
+            "rewardsCancelTotalAmount": "0",
+            "currentRewardsTotalAmount": "139.00",
+            "futureRewardsTotalAmount": "0",
+            "applyRewardsKey": "ac3c8a59-356d-40ab-9f84-7209cdc75a28",
+            "loyaltyBenefitEligibleFlag": "true",
+            "rewardsUsedFlag": "true",
+            "onlinePaymentCustomerEmail": "0",
+            "onlinePaymentCustomerId": "0",
+            "financialGroups": [
+                {
+                    "financialGroupId": 1,
+                    "financialGroupDesc": "FILLABLE",
+                    "lineItemSequenceNbrs": [
+                        1
+                    ],
+                    "currentTotalBeforeSavings": "139.00",
+                    "futureTotalBeforeSavings": "0",
+                    "currentTotalQuantity": "1",
+                    "futureTotalQuantity": "0",
+                    "currentDutyTaxTotal": "0",
+                    "futureDutyTaxTotal": "0",
+                    "currentAdditionalShippingChargeAmount": "0",
+                    "futureAdditionalShippingChargeAmount": "0",
+                    "discountList": [
+                        {
+                            "discountGroup": 15,
+                            "currentDiscountTotal": "139.00",
+                            "futureDiscountTotal": "0"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "7752",
+        "transaction": {
+            "transactionType": "Retail",
+            "transactionId": "7752",
+            "transactionEntryDate": "2021-11-18",
+            "inventoryLocationId": 40,
+            "registerId": 1,
+            "orderId": "010012343434",
+            "storeName": "FREEPORT FLAGSHIP STORE"
+        },
+        "externalSalesTransId": null,
+        "externalOrderSequenceNbr": null,
+        "date": "2021-11-18T10:05:27.000",
+        "transactionBeginTs": "2021-11-18T10:04:28.000000-05:00",
+        "transactionEndTs": "2021-11-18T10:05:27.000000-05:00",
+        "source": "RETAIL",
+        "purchaseSource": "RETAIL",
+        "isCustPrevIdSuccessful": true,
+        "userId": "999998",
+        "sourceCode": "1055000",
+        "alphaCode": "ZZ",
+        "purchaseStatus": "FILLED",
+        "type": "REGULAR",
+        "status": "COMPLETE",
+        "total": "29.95",
+        "registerid": "1",
+        "storeid": "40",
+        "storeName": "FREEPORT FLAGSHIP STORE",
+        "buyer": {
+            "buyerEmailAddress": "EFALCK@GMAIL.COM",
+            "customerId": "00666079972",
+            "customerGenderId": "U",
+            "customerTelephoneNumber": [],
+            "customerAddress": {
+                "addressId": "57515883481",
+                "addressLine1Text": "123 MAIN ST",
+                "addressLine2Text": "",
+                "addressLine3Text": "",
+                "cityName": "FREEPORT",
+                "postalCode": "040321200",
+                "countryDesc": "UNITED STATES",
+                "countryId": "USA",
+                "countryAddressFormat": "D1",
+                "jurisdictionCode": "ME",
+                "secondaryAddressInd": "",
+                "secondaryAddressLineText": "",
+                "customerAddressMailFlag": "false",
+                "mailingLabel": [
+                    {
+                        "Line": "123 MAIN ST"
+                    },
+                    {
+                        "Line": "FREEPORT ME 040321200"
+                    },
+                    {
+                        "Line": "UNITED STATES"
+                    }
+                ],
+                "addressSequenceNumber": "1"
+            },
+            "customerName": {
+                "businessName": "",
+                "surName": "FALCK",
+                "firstGivenName": "ELIZABETH",
+                "postSurName": "",
+                "secondGivenName": "",
+                "honorific": "",
+                "suffixName": "",
+                "titleDesc": ""
+            }
+        },
+        "recipients": [
+            {
+                "customerId": "00666079972",
+                "customerGenderId": "U",
+                "isBuyer": "true",
+                "packageLabelName": "",
+                "suppressPI": "false",
+                "carrierId": "",
+                "carrierServiceId": "",
+                "overrideExpediteChargeAmount": "0",
+                "waiveBaseShipping": "",
+                "waiveExpediteShipping": "",
+                "waiveShippingReasonCode": "",
+                "waiveShippingReasonText": "",
+                "waiveShippingSequenceNbr": "0",
+                "waiveShippingReasonTyp": "",
+                "recipientSequenceNbr": "0",
+                "customerName": {
+                    "businessName": "",
+                    "surName": "FALCK",
+                    "firstGivenName": "ELIZABETH",
+                    "postSurName": "",
+                    "secondGivenName": "",
+                    "honorific": "",
+                    "suffixName": "",
+                    "titleDesc": ""
+                },
+                "customerAddress": {
+                    "addressId": "57515883481",
+                    "addressLine1Text": "123 MAIN ST",
+                    "addressLine2Text": "",
+                    "addressLine3Text": "",
+                    "cityName": "FREEPORT",
+                    "postalCode": "040321200",
+                    "countryDesc": "UNITED STATES",
+                    "countryId": "USA",
+                    "countryAddressFormat": "D1",
+                    "jurisdictionCode": "ME",
+                    "secondaryAddressInd": "",
+                    "secondaryAddressLineText": "",
+                    "customerAddressMailFlag": "false",
+                    "effectiveDate": null,
+                    "mailingLabel": [
+                        {
+                            "Line": "123 MAIN ST"
+                        },
+                        {
+                            "Line": "FREEPORT ME 040321200"
+                        },
+                        {
+                            "Line": "UNITED STATES"
+                        }
+                    ],
+                    "addressSequenceNumber": "1"
+                },
+                "customerTelephoneNumber": [
+                    {
+                        "telephoneTypeInd": "PHN",
+                        "telephoneNumber": "",
+                        "areaCode": "",
+                        "telephoneExtension": "",
+                        "telephoneUsageInd": "E",
+                        "internationalCountryCode": ""
+                    }
+                ],
+                "customerMessageList": [],
+                "shippingComments": "",
+                "financials": {
+                    "currentServiceAmountTotal": "0",
+                    "currentDiscountAmountTotal": "0",
+                    "futureServiceAmountTotal": "0",
+                    "futureDiscountAmountTotal": "0",
+                    "serviceAmountTotal": "0",
+                    "merchandiseTotal": "29.95",
+                    "currentMerchandiseTotal": "29.95",
+                    "futureMerchandiseTotal": "0",
+                    "currentAdditionalShippingChargeAmount": "0",
+                    "futureAdditionalShippingChargeAmount": "0",
+                    "currentTaxTotal": "0",
+                    "futureTaxTotal": "0",
+                    "totalTaxAmount": "0",
+                    "currentDutiesTotal": "0",
+                    "currentBaseShippingChargeAmount": "0",
+                    "currentExpediteShippingChargeAmount": "0",
+                    "promoShippingSavingsAmount": "0",
+                    "promoMerchandiseSavingsAmount": "0",
+                    "rewardsAppliedTotalAmount": "29.95",
+                    "rewardsRefundTotalAmount": "0",
+                    "rewardsCancelTotalAmount": "0",
+                    "currentRewardsTotalAmount": "29.95",
+                    "futureRewardsTotalAmount": "0",
+                    "recipientQuantityTotal": "1",
+                    "recipientLineItemCount": "1"
+                }
+            }
+        ],
+        "items": [
+            {
+                "customerId": "00666079972",
+                "recipientSequenceNbr": "0",
+                "id": "112636",
+                "sku": "0M19610002",
+                "prodId": "0M19610002",
+                "merchandisingDescriptorId": "2026",
+                "sizeCode": "1023",
+                "returnedQuantity": "1",
+                "shipDeliveryInd": "",
+                "reEntryFlag": "false",
+                "promoApplied": "false",
+                "discounts": [
+                    {
+                        "discountSequenceNbr": "1",
+                        "discountGroup": "15",
+                        "discountAmount": "29.95",
+                        "promoOfferId": "0",
+                        "promoGiftCard": ""
+                    }
+                ],
+                "initialSequenceNbr": "1",
+                "reviews": {},
+                "published": 0,
+                "alphaCode": "ZZ",
+                "desc": "Boat and Tote Med",
+                "discountCategoryInd": "",
+                "quantity": "1",
+                "returnable": "false",
+                "returnableQuantity": "0",
+                "dutyTaxAmount": "0",
+                "image": "https://ecdisq.llbean.net/is/image/wim/112636_2026_42",
+                "lineItemStatusInd": "RTURN",
+                "lineItemStatus": "RETURNED",
+                "lineItemSequenceNbr": "1",
+                "lineItemMessage": [],
+                "initialLineItemSequenceNbr": "1",
+                "services": [],
+                "attributes": [
+                    {
+                        "id": "2026",
+                        "name": "Color/Style",
+                        "value": "Black Trim",
+                        "desc": "Black Trim"
+                    },
+                    {
+                        "id": "1023",
+                        "name": "Size",
+                        "value": "Long",
+                        "desc": "Long"
+                    }
+                ],
+                "prices": {
+                    "price": "29.95",
+                    "fullprice": "29.95",
+                    "saleprice": "29.95",
+                    "discountamount": "0.00",
+                    "additionalShippingChargeAmount": "0",
+                    "priceValid": "true",
+                    "groupFullPrice": "0",
+                    "groupFullQuantity": "0",
+                    "rewardsAmount": "29.95",
+                    "rewardsCancelAmount": "0",
+                    "pricePaid": "0"
+                },
+                "name": "Boat and Tote Medium, Long, Black Trim",
+                "dutyTaxes": [
+                    {
+                        "refundAmount": 0,
+                        "chargeAmount": 0,
+                        "taxCalculateMethodId": 1,
+                        "dutyTaxType": "00001",
+                        "taxGeoCode": "200050000"
+                    }
+                ],
+                "profitCenterId": "0000001123",
+                "packagesTracking": []
+            }
+        ],
+        "services": [],
+        "payments": {
+            "methods": [],
+            "activity": []
+        },
+        "promoCodes": [],
+        "promoGiftCards": [],
+        "promoGlobalOffers": [],
+        "promoOverrideOffers": [],
+        "package": [],
+        "financials": {
+            "currentMerchandiseTotal": "29.95",
+            "futureMerchandiseTotal": "0",
+            "currentTaxTotal": "0",
+            "futureTaxTotal": "0",
+            "currentDutiesTotal": "0",
+            "currentBaseShippingChargeAmount": "0",
+            "futureBaseShippingChargeAmount": "0",
+            "currentShippingExpediteChargeAmount": "0",
+            "currentAdditionalShippingChargeAmount": "0",
+            "futureAdditionalShippingChargeAmount": "0",
+            "returnPostageRefundAmount": "0",
+            "refundBaseShippingChargeAmount": "0",
+            "refundExpediteShippingChargeAmount": "0",
+            "dutyTaxRefundAmount": "0",
+            "returnTotalAmount": "0",
+            "returnLabelAmount": "0",
+            "returnDiscountAmount": "0",
+            "cashRefundTotalAmount": "0",
+            "giftCardRefundTotalAmount": "0",
+            "totalDiscountAmount": "0",
+            "totalToDateAmount": "0",
+            "promoShippingSavingsAmount": "0",
+            "promoMerchandiseSavingsAmount": "0",
+            "currentServiceTotal": "0",
+            "futureServiceTotal": "0",
+            "futureExternalPaymentsTotalAmount": "0",
+            "futureCreditCardPaymentsTotalAmount": "0",
+            "billPaymentsTotalAmount": "0",
+            "bwrPaymentsTotalAmount": "0",
+            "cashPaymentsTotalAmount": "0",
+            "checkPaymentsTotalAmount": "0",
+            "moneyOrderPaymentsTotalAmount": "0",
+            "noChargePaymentsTotalAmount": "0",
+            "noMoneyPaymentsTotalAmount": "0",
+            "paidPaymentsTotalAmount": "0",
+            "couponPaymentsTotalAmount": "0",
+            "giftCertificatePaymentsTotalAmount": "0",
+            "giftCardPaymentsTotalAmount": "0",
+            "checkRefundTotalAmount": "0",
+            "underpaymentAmount": "0",
+            "couponRefundTotalAmount": "0",
+            "creditCardRefundTotalAmount": "0",
+            "externalPaymentRefundTotalAmount": "0",
+            "currentCreditCardPaymentsTotalAmount": "0",
+            "currentDebitCardPaymentsTotalAmount": "0",
+            "currentExternalPaymentsTotalAmount": "0",
+            "rewardsAppliedTotalAmount": "29.95",
+            "rewardsRefundTotalAmount": "0",
+            "rewardsCancelTotalAmount": "0",
+            "currentRewardsTotalAmount": "29.95",
+            "futureRewardsTotalAmount": "0",
+            "applyRewardsKey": "c4eb9996-0232-4b5d-b67d-26129a98f0cc",
+            "loyaltyBenefitEligibleFlag": "true",
+            "rewardsUsedFlag": "true",
+            "onlinePaymentCustomerEmail": "0",
+            "onlinePaymentCustomerId": "0",
+            "financialGroups": [
+                {
+                    "financialGroupId": 1,
+                    "financialGroupDesc": "FILLABLE",
+                    "lineItemSequenceNbrs": [
+                        1
+                    ],
+                    "currentTotalBeforeSavings": "29.95",
+                    "futureTotalBeforeSavings": "0",
+                    "currentTotalQuantity": "1",
+                    "futureTotalQuantity": "0",
+                    "currentDutyTaxTotal": "0",
+                    "futureDutyTaxTotal": "0",
+                    "currentAdditionalShippingChargeAmount": "0",
+                    "futureAdditionalShippingChargeAmount": "0",
+                    "discountList": [
+                        {
+                            "discountGroup": 15,
+                            "currentDiscountTotal": "29.95",
+                            "futureDiscountTotal": "0"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
+
+}

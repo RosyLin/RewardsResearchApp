@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="WebApp" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>RewardsResearch</display-name>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/index.html</location>
+	</error-page>
+	<servlet>
+		<servlet-name>RewardsResearch</servlet-name>
+		<servlet-class>org.apache.wink.server.internal.servlet.RestServlet</servlet-class>
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>com.llbean.salestrans.rewardsresearch.RewardsResearchApplication</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RewardsResearch</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+
+	<env-entry>
+		<env-entry-name>LLBApplicationName</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>RewardsResearch</env-entry-value>
+	</env-entry>
+
+	<resource-ref id="rewards_research_payments">
+		<description>SQL Server Gold EnterpriseServices Database</description>
+		<res-ref-name>rewards_research_payments</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+
+	<resource-ref id="Gold_EnterpriseServices">
+		<description>SQL Server Gold EnterpriseServices Database</description>
+		<res-ref-name>Gold_EnterpriseServices</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+
+<!--	<resource-ref id="v1Customers">-->
+<!--		<res-ref-name>url/v1Customers</res-ref-name>-->
+<!--		<res-type>java.net.URL</res-type>-->
+<!--		<res-auth>Container</res-auth>-->
+<!--		<res-sharing-scope>Shareable</res-sharing-scope>-->
+<!--	</resource-ref>-->
+
+<!--	<resource-ref id="v1Purchases">-->
+<!--		<res-ref-name>url/v1Purchases</res-ref-name>-->
+<!--		<res-type>java.net.URL</res-type>-->
+<!--		<res-auth>Container</res-auth>-->
+<!--		<res-sharing-scope>Shareable</res-sharing-scope>-->
+<!--	</resource-ref>-->
+
+<!--	<resource-ref id="v1Rewards">-->
+<!--		<res-ref-name>url/v1Rewards</res-ref-name>-->
+<!--		<res-type>java.net.URL</res-type>-->
+<!--		<res-auth>Container</res-auth>-->
+<!--		<res-sharing-scope>Shareable</res-sharing-scope>-->
+<!--	</resource-ref>-->
+
+</web-app>

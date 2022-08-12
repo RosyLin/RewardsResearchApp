@@ -1,0 +1,20 @@
+<project basedir="." name="RewardsResearchEAR" default="build">
+
+ <target name="build" depends="build-init, _build-init, build-clean, build-prepare, javadoc, gradle-build" />
+  
+  <target name="gradle-build" >
+	 <exec failonerror="true" executable="/buildsvr/gradle-4.6/bin/gradle" resultproperty="rc" dir="../.." >
+          <arg line="clean"/>
+     </exec>
+	 <exec failonerror="true" executable="/buildsvr/gradle-4.6/bin/gradle" resultproperty="rc" dir="../.." >
+          <arg line="build"/>
+		  <arg line="-Dlabel=${label}"/>
+     </exec>
+  </target>
+
+  <!-- ############################################################################################### -->
+  <!-- ##                               Load the ancestor scripts                                   ## -->
+  <!-- ############################################################################################### -->
+  <import file="${dir.ancestor.home}/llb-ear-ancestor.xml" />
+  
+</project>

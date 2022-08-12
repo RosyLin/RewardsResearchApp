@@ -1,0 +1,9 @@
+allprojects{
+    apply plugin: 'base'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'maven-publish'
+}
+subprojects {
+    apply plugin: 'java'
+}
